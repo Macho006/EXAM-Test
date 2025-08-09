@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --primary-color: #3d98f4;
+        --secondary-color: #f0f2f4;
+        --background-color: #f9f9f9;
+        --text-primary: #000000;
+        --text-secondary: #ffffffff;
+        --accent-color: #e0e7ff;
+      }
+      .menu-item {
+        @apply px-2.5 py-1 text-[16px] font-normal bg-[#F2F2F2] rounded-[28px];
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+    <div class="">
+        <header class="mt-4  max-w-[1216px] mx-auto px-4">
+            <nav>
+                <div class="flex justify-between items-center">
+                    <img src="./assets/desktop.svg" alt="" class="w-[120px]" />
+
+                    <div class="hidden md:flex items-center gap-6 mt-2">
+                        <div class="flex gap-4">
+                            <img class="w-[36px]" src="./assets/vk.svg" alt="" />
+                            <img class="w-[36px]" src="./assets/instagram.svg" alt="" />
+                            <img class="w-[36px]" src="./assets/whatsapp.svg" alt="" />
+                        </div>
+
+                        <div class="flex items-center ml-8 md:ml-1">
+                            <img class="w-[36px]" src="./assets/avatar small.svg" alt="" />
+                            <a href="tel:+79023113664"
+                                class="text-[var(--text-primary)] hover:text-blue-800 font-medium ml-2">
+                                +7 (902) 311 36 64
+                            </a>
+                            <button class="w-[177px] h-[30px] bg-black text-white rounded-sm ml-4">
+                                подать документы
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+            <div class="menu-wrapper mt-8">
+                <!-- Menu Button -->
+                <div class="menu-toggle sm:hidden flex justify-end -mt-[60px] mb-4">
+                    <button id="menu-btn" class="px-4 py-2 bg-[#F2F2F2] rounded-full text-sm font-medium text-gray-800">
+                        Меню
+                    </button>
+                </div>
+
+                <!-- Menu Items -->
+                <div id="menu-items" class="hidden flex-wrap sm:flex justify-between items-center gap-2">
+                    <a class="menu-item" href="#">Направления</a>
+                    <a class="menu-item" href="#">Вузы</a>
+                    <a class="menu-item" href="#">Колледжи</a>
+                    <a class="menu-item" href="#">Профессии</a>
+                    <a class="menu-item" href="#">Отзывы</a>
+                    <a class="menu-item" href="#">Вопрос-ответ</a>
+                    <a class="menu-item" href="#">Как поступить</a>
+                    <a class="menu-item" href="#">Учебным заведениям</a>
+                    <a class="menu-item" href="#">Контакты</a>
+                    <a class="menu-item" href="#">Ещё</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="max-w-[1216px] mx-auto px-4">
+                <div class="mt-16 flex flex-col lg:flex-row justify-between gap-8">
+                    <div
+                        class="flex w-full lg:w-[750px] h-[300px] sm:h-[400px] lg:h-[496px] bg-[url('./assets/bg.png')] bg-cover bg-center py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
+                        <div>
+                            <h1
+                                class="text-[28px] sm:text-[35px] lg:text-[45px] font-extrabold w-full sm:w-[350px] lg:w-[400px] leading-[38px] sm:leading-[50px] lg:leading-[60px]">
+                                Образование онлайн в Нижнем Новгороде
+                            </h1>
+                            <p
+                                class="text-[16px] sm:text-[20px] lg:text-[22px] font-normal leading-[28px] sm:leading-[35px] lg:leading-[40px] w-full sm:w-[380px] lg:w-[410px] mt-4 sm:mt-5 lg:mt-[21px]">
+                                Мы — единая приёмная комиссия вузов и колледжей по дистанционным программам обучения
+                            </p>
+                            <p
+                                class="text-[12px] sm:text-[14px] font-normal leading-6 sm:leading-7 mt-8 sm:mt-10 lg:mt-[70px]">
+                                • от 12 500 ₽ семестр <span class="mx-1">•</span> от 2,5 лет
+                                <span class="mx-1">•</span> 100% онлайн
+                            </p>
+                        </div>
+                        <div class="hidden sm:block">
+                            <img class="ml-[150px] sm:ml-[180px] lg:ml-[230px]" src="./assets/share.svg" alt="" />
+                            <img class="mt-[150px] sm:mt-[200px] lg:mt-[257px] ml-[80px] sm:ml-[100px] lg:ml-[120px]"
+                                src="./assets/Ellipse 262.svg" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-[384px] h-auto lg:h-[496px] bg-black px-6 sm:px-8 lg:px-10 py-6 sm:py-8">
+                        <div class="flex gap-2">
+                            <hr class="border-[2px] w-[30%] h-[2px]" />
+                            <hr class="border-[#252525] border-[2px] w-[30%] h-[2px]" />
+                            <hr class="border-[#252525] border-[2px] w-[30%] h-[2px]" />
+                        </div>
+                        <div class="flex justify-between items-center text-white mt-4">
+                            <p class="text-[18px] sm:text-[20px] lg:text-[22px] font-medium leading-8 lg:leading-10">
+                                Подобрать обучение
+                            </p>
+                            <p class="text-[12px] sm:text-[13px] font-normal leading-[22px] text-[#787878]">1/3</p>
+                        </div>
+
+                        <div class="mt-10 sm:mt-[80px] lg:mt-[100px]">
+                            <p
+                                class="text-[16px] sm:text-[18px] font-semibold leading-[24px] sm:leading-[26px] text-white">
+                                Какое у Вас образование?
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4 sm:mt-[19px]">
+                                <button class="px-3 py-1 text-[#A8A8A8] border border-[#282828] rounded-full">9
+                                    классов</button>
+                                <button class="px-3 py-1 text-[#A8A8A8] border border-[#282828] rounded-full">11
+                                    классов</button>
+                                <button
+                                    class="px-3 py-1 text-[#A8A8A8] border border-[#282828] rounded-full">Училище</button>
+                                <button
+                                    class="px-3 py-1 text-[#A8A8A8] border border-[#282828] rounded-full">Колледж</button>
+                                <button
+                                    class="px-3 py-1 text-[#A8A8A8] border border-[#282828] rounded-full">Техникум</button>
+                                <button
+                                    class="px-3 py-1 text-[#A8A8A8] border border-[#282828] rounded-full">Неоконченное
+                                    высшее</button>
+                                <button
+                                    class="px-3 py-1 text-[#A8A8A8] border border-[#282828] rounded-full">Высшее</button>
+                            </div>
+                        </div>
+
+                        <button class="w-full bg-[#252525] text-[#4A4A4A] py-3 mt-6 sm:mt-[40px] lg:mt-[52px]">
+                            Отправить заявку
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="overflow-x-auto scrollbar-hide border mt-16 py-[55px]">
+                <div class="flex gap-40 justify-center items-center min-w-max">
+                    <img src="./assets/Rectangle 384.svg" alt="" class="w-32 h-auto">
+                    <img src="./assets/Rectangle 385.svg" alt="" class="w-32 h-auto">
+                    <img src="./assets/Rectangle 386.svg" alt="" class="w-32 h-auto">
+                    <img src="./assets/Rectangle 387.svg" alt="" class="w-32 h-auto">
+                    <img src="./assets/Rectangle 388.svg" alt="" class="w-32 h-auto">
+                    <img src="./assets/Rectangle 389.svg" alt="" class="w-32 h-auto">
+                    <img src="./assets/Rectangle 390.svg" alt="" class="w-32 h-auto">
+                    <img src="./assets/Rectangle 391.svg" alt="" class="w-32 h-auto">
+                </div>
+            </section>
+
+            <section class="max-w-7xl mx-auto px-4 py-8">
+
+                <div class="flex flex-wrap gap-6 border-b">
+                    <button class="pb-2 border-b-2 border-black font-bold">
+                        Высшее <span class="text-gray-500">14</span>
+                    </button>
+                    <button class="pb-2 text-gray-500">Среднее <span>9</span></button>
+                    <button class="pb-2 text-gray-500">ДПО <span>36</span></button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+                    <div class="flex bg-[url('./assets/Туризм.png')] bg-cover bg-center p-6 gap-6 h-[248px]">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Туризм</h3>
+                                <p class="text-sm text-gray-600 mt-2">• от 12 500 ₽ семестр</p>
+                                <p class="text-sm text-gray-600">• от 2,5 лет</p>
+                            </div>
+                            <button class="text-sm border border-gray-300 px-4 py-2 rounded-lg">
+                                ... консультация
+                            </button>
+                        </div>
+                        <img class="w-[100px] sm:w-[120px] mt-auto" src="./assets/Туризм.svg" alt="">
+                    </div>
+
+
+                    <div class="flex bg-[url('./assets/юриспруденция.png')] bg-cover bg-center p-6 gap-6 h-[248px]">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Юриспруденция</h3>
+                                <p class="text-sm text-gray-600 mt-2">• от 12 500 ₽ семестр</p>
+                                <p class="text-sm text-gray-600">• от 2,5 лет</p>
+                            </div>
+                            <button class="text-sm border border-gray-300 px-4 py-2 rounded-lg">
+                                ... консультация
+                            </button>
+                        </div>
+                        <img class="w-[100px] sm:w-[120px] mt-auto" src="./assets/юриспруденция.svg" alt="">
+                    </div>
+
+
+                    <div class="flex bg-[url('./assets/экономика.png')] bg-cover bg-center p-6 gap-6 h-[248px]">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Экономика</h3>
+                                <p class="text-sm text-gray-600 mt-2">• от 12 500 ₽ семестр</p>
+                                <p class="text-sm text-gray-600">• от 2,5 лет</p>
+                            </div>
+                            <button class="text-sm border border-gray-300 px-4 py-2 rounded-lg">
+                                ... консультация
+                            </button>
+                        </div>
+                        <img class="w-[100px] sm:w-[120px] mt-auto" src="./assets/экономика.svg" alt="">
+                    </div>
+
+
+                    <div class="flex bg-[url('./assets/юриспруденция.png')] bg-cover bg-center p-6 gap-6 h-[248px]">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Юриспруденция</h3>
+                                <p class="text-sm text-gray-600 mt-2">• от 12 500 ₽ семестр</p>
+                                <p class="text-sm text-gray-600">• от 2,5 лет</p>
+                            </div>
+                            <button class="text-sm border border-gray-300 px-4 py-2 rounded-lg">
+                                ... консультация
+                            </button>
+                        </div>
+                        <img class="w-[100px] sm:w-[120px] mt-auto" src="./assets/юриспруденция.svg" alt="">
+                    </div>
+
+
+                    <div class="flex bg-[url('./assets/bg5.png')] bg-cover bg-center p-6 gap-6 h-[248px]">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Юриспруденция</h3>
+                                <p class="text-sm text-gray-600 mt-2">• от 12 500 ₽ семестр</p>
+                                <p class="text-sm text-gray-600">• от 2,5 лет</p>
+                            </div>
+                            <button class="text-sm border border-gray-300 px-4 py-2 rounded-lg">
+                                ... консультация
+                            </button>
+                        </div>
+                        <img class="w-[100px] sm:w-[120px] mt-auto" src="./assets/юриспруденция.svg" alt="">
+                    </div>
+
+
+                    <div class="flex bg-[url('./assets/bg6.png')] bg-cover bg-center p-6 gap-6 h-[248px]">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Юриспруденция</h3>
+                                <p class="text-sm text-gray-600 mt-2">• от 12 500 ₽ семестр</p>
+                                <p class="text-sm text-gray-600">• от 2,5 лет</p>
+                            </div>
+                            <button class="text-sm border border-gray-300 px-4 py-2">
+                                ... консультация
+                            </button>
+                        </div>
+                        <img class="w-[100px] sm:w-[120px] mt-auto" src="./assets/юриспруденция.svg" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="mt-6 text-center">
+                    <button class="w-full border border-gray-300 px-6 py-3 text-sm">
+                        ПОКАЗАТЬ ЕЩЁ 24 НАПРАВЛЕНИЯ
+                    </button>
+                </div>
+            </section>
+
+            <section class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+                <div>
+                    <h2 class="text-2xl sm:text-3xl lg:text-[44px] font-bold leading-snug mb-6">
+                        Вы получите — диплом гособразца
+                    </h2>
+                    <p class="text-lg sm:text-xl lg:text-[22px] leading-10 mb-8">
+                        Все наши учебные заведения-партнёры <br> имеют госаккредитацию, а дипломы заносятся <br> в
+                        федеральный реестр.
+                    </p>
+                    <div class="flex flex-wrap gap-6 border-b">
+                        <button class="pb-2 border-b-2 border-black font-bold">Высшее</button>
+                        <button class="pb-2 text-gray-500">Среднее</button>
+                        <button class="pb-2 text-gray-500">ДПО</button>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="./assets/image 4.png" alt="Diploma" class="w-full shadow">
+                </div>
+            </section>
+
+            <section class="max-w-[1216px] mx-auto px-4 ">
+                <h2 class="text-3xl font-bold mb-6">Отзывы реальных студентов</h2>
+
+                <div class="flex space-x-6 overflow-x-auto scrollbar-hide pb-4">
+                    <div>
+                        <div class="min-w-[488px] bg-[#F2F2F2] p-6  shadow flex flex-col justify-between">
+                            <p class="text-gray-700 mb-4">
+                                Мне за время учебы удалось почувствовать себя сотрудником на удаленке.
+                                Отпуск в тайланд совпал со вторым сборным проектом. Ох эта атмосфера!
+                                Бассейн, солнце, манго, ноутбук с проектом, Марина Левушкина, напоминающая о
+                                дедлайне)))!
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+
+                            <p class="text-gray-700 mb-4">
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+                        </div>
+                        <div class="flex space-x-3 mt-8">
+                            <img src="./assets/Frame 176.svg" alt="" class="w-22 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold">Антон Пябладовец</p>
+                                <p class="text-sm text-gray-500">Московский экономический институт</p>
+                                <button class="text-sm border border-gray-300 px-3 py-1 mt-3 rounded-lg">
+                                    ... написать в vk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="min-w-[488px] bg-[#F2F2F2] p-6  shadow flex flex-col justify-between">
+                            <p class="text-gray-700 mb-4">
+                                Мне за время учебы удалось почувствовать себя сотрудником на удаленке.
+                                Отпуск в тайланд совпал со вторым сборным проектом. Ох эта атмосфера!
+                                Бассейн, солнце, манго, ноутбук с проектом, Марина Левушкина, напоминающая о
+                                дедлайне)))!
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+
+                            <p class="text-gray-700 mb-4">
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+                        </div>
+                        <div class="flex space-x-3 mt-8">
+                            <img src="./assets/Frame 175.svg" alt="" class="w-22 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold">Александр Никоноров</p>
+                                <p class="text-sm text-gray-500">Тульский государственный университет</p>
+                                <button class="text-sm border border-gray-300 px-3 py-1 mt-3 rounded-lg">
+                                    ... написать в vk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="min-w-[488px] bg-[#F2F2F2] p-6  shadow flex flex-col justify-between">
+                            <p class="text-gray-700 mb-4">
+                                Мне за время учебы удалось почувствовать себя сотрудником на удаленке.
+                                Отпуск в тайланд совпал со вторым сборным проектом. Ох эта атмосфера!
+                                Бассейн, солнце, манго, ноутбук с проектом, Марина Левушкина, напоминающая о
+                                дедлайне)))!
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+
+                            <p class="text-gray-700 mb-4">
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+                        </div>
+                        <div class="flex space-x-3 mt-8">
+                            <img src="./assets/Frame 177.svg" alt="" class="w-22 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold">Василий Скворцов</p>
+                                <p class="text-sm text-gray-500">Московский экономический институт</p>
+                                <button class="text-sm border border-gray-300 px-3 py-1 mt-3 rounded-lg">
+                                    ... написать в vk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="min-w-[488px] bg-[#F2F2F2] p-6  shadow flex flex-col justify-between">
+                            <p class="text-gray-700 mb-4">
+                                Мне за время учебы удалось почувствовать себя сотрудником на удаленке.
+                                Отпуск в тайланд совпал со вторым сборным проектом. Ох эта атмосфера!
+                                Бассейн, солнце, манго, ноутбук с проектом, Марина Левушкина, напоминающая о
+                                дедлайне)))!
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+
+                            <p class="text-gray-700 mb-4">
+                                Вспоминаю это все с восторгом! Оказалось, работать на удаленке не так то и просто!)
+                            </p>
+                        </div>
+                        <div class="flex space-x-3 mt-8">
+                            <img src="./assets/Frame 175.svg" alt="" class="w-22 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold">Василий Скворцов</p>
+                                <p class="text-sm text-gray-500">Московский экономический институт</p>
+                                <button class="text-sm border border-gray-300 px-3 py-1 mt-3 rounded-lg">
+                                    ... написать в vk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section
+                class="max-w-[1216px] mx-auto px-4 mt-[128px]  md:px-8  py-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-[44px] font-bold leading-[51px] mb-4">Поступайте — <br> быстро и без <br> нервов
+                    </h2>
+                    <p class="text-gray-700 mb-6">
+                        Вступительные по результатам ЕГЭ или онлайн-тестам. Ведём набор круглый год.
+                    </p>
+                    <button class="px-6 py-3 border border-black hover:bg-black hover:text-white transition">Схема
+                        поступления</button>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="./assets/учиться с телефна.png" alt="Схема" class="max-w-full h-auto">
+                </div>
+            </section>
+
+            <section class="max-w-[1216px] mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center items-center">
+                    <img src="./assets/учиться с телефна1.png" alt="Схема" class="max-w-full h-auto">
+                </div>
+                <div>
+                    <h2 class="text-[44px] font-bold leading-[51px] mb-4">Учитесь — <br> где и когда <br> хотите</h2>
+                    <p class="text-gray-700">
+                        Учёба полностью онлайн: от вступительных тестов до самой защиты. Для занятий достаточно
+                        смартфона, планшета или ноутбука.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-[128px]  bg-black">
+            <section class="max-w-[1216px] mx-auto px-4 pt-[128px]">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-[44px] text-white font-bold mb-2">Вопрос-ответ:</h1>
+                    <p class="text-gray-400 text-[13px] font-normal leading-[22px] text-end">
+                        Мы отобрали вопросы, которые задают <br> нашим менеджерам каждый день
+                    </p>
+                </div>
+
+                <div class="space-y-4 text-white">
+                    <div class="border-b border-gray-700 pb-4 flex justify-between items-center cursor-pointer">
+                        <span class="text-lg">Где учиться по удаленной специальности?</span>
+                        <span class="text-2xl text-gray-400">+</span>
+                    </div>
+                    <div class="border-b border-gray-700 pb-4 flex justify-between items-center cursor-pointer">
+                        <span class="text-lg">Как проходит дистанционное обучение?</span>
+                        <span class="text-2xl text-gray-400">+</span>
+                    </div>
+                    <div class="border-b border-gray-700 pb-4 flex justify-between items-center cursor-pointer">
+                        <span class="text-lg">
+                            Какой документ об образовании выдается после дистанционной учебы в колледже или вузе?
+                        </span>
+                        <span class="text-2xl text-gray-400">+</span>
+                    </div>
+                    <div class="border-b border-gray-700 pb-4 flex justify-between items-center cursor-pointer">
+                        <span class="text-lg">Я решил поступать. Что дальше делать?</span>
+                        <span class="text-2xl text-gray-400">+</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="max-w-[1216px] mx-auto px-4 bg-white mt-32">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start lg:items-center px-[56px] py-[64px]">
+              
+
+                  <div>
+                    <h2 class="text-4xl font-bold mb-4">Ещё <br> вопросы?</h2>
+                    <p class="text-lg mb-8">
+                      Задайте их и наш менеджер <br> свяжется с Вами в течение <br> 15 минут
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <img src="./assets/avatar small.svg" alt="Manager" class="w-12 h-12 rounded-full">
+                      <p class="text-gray-500 text-sm">
+                        Вам ответит Анастасия — Ваш персональный менеджер
+                      </p>
+                    </div>
+                  </div>
+              
+
+                  <form class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div>
+                      <label class="block text-sm font-medium mb-2">Как Вас зовут?</label>
+                      <input type="text" placeholder="Иванов Иван"
+                        class="w-full bg-gray-100 border border-gray-200 rounded-lg px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black" />
+                    </div>
+              
+                    <div>
+                      <label class="block text-sm font-medium mb-2">Напишите свои вопросы:</label>
+                      <textarea placeholder="Вы можете задать несколько вопросов"
+                        class="w-full bg-gray-100 border border-gray-200 rounded-lg px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black h-28"></textarea>
+                    </div>
+              
+                    <div class="md:col-span-1">
+                      <label class="block text-sm font-medium mb-2">Ваш телефон</label>
+                      <input type="tel" placeholder="+7 (000) 000 00 00"
+                        class="w-full bg-gray-100 border border-gray-200 rounded-lg px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black" />
+                      <p class="text-xs text-gray-500 mt-3">
+                        Нажимая кнопку “Задать вопрос”, Вы <br> соглашаетесь с условиями обработки <br>
+                        <a href="#" class="underline">персональных данных</a>
+                      </p>
+                    </div>
+              
+                    <div class="md:col-span-1 flex items-end">
+                      <button type="submit"
+                        class="w-full bg-black text-white py-3 rounded-lg font-medium hover:bg-gray-800 transition">
+                        Задать вопрос
+                      </button>
+                    </div>
+                  </form>
+              
+                </div>
+              </section>
+              
+
+
+              <div class="max-w-7xl mx-auto px-4 sm:px-4 md:px-6 lg:px-8 py-12">
+
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16">
+              
+                  <div class="space-y-4 col-span-1 leading-7 md:leading-8">
+                    <img src="./assets/desktop2.svg" alt="">
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                      Единая приёмная комиссия вузов и колледжей по дистанционным программам
+                    </p>
+                    <a href="#" class="block text-white text-nowrap underline">Политика конфиденциальности</a>
+                  </div>
+              
+                  <div class="space-y-2 text-gray-200 text-sm leading-7 sm:leading-8 md:leading-[44px]">
+                    <a href="#" class="block hover:text-white">Направления</a>
+                    <a href="#" class="block hover:text-white">Вузы</a>
+                    <a href="#" class="block hover:text-white">Колледжи</a>
+                    <a href="#" class="block hover:text-white">Профессии</a>
+                  </div>
+              
+                  <div class="space-y-2 text-gray-200 text-sm leading-7 sm:leading-8 md:leading-[44px]">
+                    <a href="#" class="block hover:text-white">Как поступить</a>
+                    <a href="#" class="block hover:text-white">Отзывы</a>
+                    <a href="#" class="block hover:text-white">Вопрос-ответ</a>
+                    <a href="#" class="block hover:text-white">Полезные статьи</a>
+                  </div>
+              
+                  <div class="space-y-2 text-gray-200 text-sm leading-7 sm:leading-8 md:leading-[44px]">
+                    <a href="#" class="block hover:text-white">Партнёрам</a>
+                    <a href="#" class="block hover:text-white">Шансы по ЕГЭ</a>
+                    <a href="#" class="block hover:text-white">Контакты</a>
+                    <a href="#" class="block hover:text-white">Подать документы</a>
+                  </div>
+              
+                  <!-- Contact -->
+                  <div class="space-y-3">
+                    <p class="text-lg text-white">+7 (902) 311 36 64</p>
+                    <div class="text-sm">
+                      <p class="text-gray-400">Рабочее время:</p>
+                      <p class="text-white">Пн — Пт с 9.00 до 19.00</p>
+                    </div>
+                    <div class="flex space-x-3 pt-6 md:pt-[60px]">
+                      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg"
+                          class="w-8 h-8"></a>
+                      <a href="#"><img
+                          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                          class="w-8 h-8 rounded-full"></a>
+                      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                          class="w-8 h-8"></a>
+                    </div>
+                  </div>
+              
+                </div>
+              
+                <div class="mt-10 text-center">
+                  <span class="text-lg text-white font-bold">Подобрать обучение</span>
+                  <span class="text-green-500 text-2xl">•</span>
+                </div>
+              </div>
+              
+
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
